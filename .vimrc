@@ -15,6 +15,7 @@ set mouse=a
 set is
 set si
 set cb=unnamed
+set expandtab
 autocmd FileType cpp nnoremap <F12> :!g++ -std=c++17 -fsanitize=undefined -fsanitize=address -DLOCAL -O2 % -o %:r && echo "Compile Finished" && ./%:r<CR>
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
